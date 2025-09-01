@@ -1,0 +1,61 @@
+.section {
+    padding: 32px;
+    margin-bottom: 32px;
+    border-radius: 16px;
+    background-color: #ffffff;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.section:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+.section h2 {
+    font-size: 2em;
+    margin-bottom: 16px;
+    color: #111827;
+    text-align: center;
+}
+
+.section p {
+    color: #6b7280;
+    font-size: 1em;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Секція проєктів */
+.projects {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projectCard {
+    background-color: #f9f9f9;
+    border-radius: 16px;
+    padding: 24px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.projectCard:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.1);
+}
+
+.projectCard h3 {
+    margin-bottom: 12px;
+    color: #4f46e5;
+    /* насичений синій */
+}
+
+.projectCard p {
+    font-size: 0.95em;
+    color: #6b7280;
+}

@@ -1,0 +1,38 @@
+.header {
+    background-image: url('/images/header_logo.png');
+    /* вставляєш своє зображення в public/images/ */
+    background-size: cover;
+    /* покриває весь блок */
+    background-position: center;
+    /* центр зображення */
+    background-repeat: no-repeat;
+    padding: 32px;
+    border-radius: 12px;
+    color: #ffffff;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 16px;
+}
+
+.nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #ff9900;
+}

@@ -1,0 +1,158 @@
+:root {
+  --bg-color: #f9f9f9;
+  --block-bg: #ffffff;
+  --primary-color: #4f46e5;
+  /* насичений синій */
+  --accent-color: #f59e0b;
+  /* помаранчевий акцент */
+  --text-color: #111827;
+  /* темно-сірий текст */
+  --text-light: #6b7280;
+  /* для допоміжного тексту */
+  --font-main: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  line-height: 1.6;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Контейнер сайту */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  gap: 32px;
+}
+
+/* Header */
+header {
+  padding: 32px;
+  border-radius: 16px;
+  background-color: var(--block-bg);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+header h1 {
+  margin: 0 0 16px 0;
+  font-size: 2.8em;
+  letter-spacing: 1px;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+nav a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: all 0.25s ease;
+}
+
+nav a:hover {
+  background-color: var(--accent-color);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Main */
+main {
+  padding: 32px;
+  border-radius: 16px;
+  background-color: var(--block-bg);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+main h2 {
+  margin-top: 0;
+  font-size: 2em;
+}
+
+main p {
+  color: var(--text-light);
+  font-size: 1em;
+}
+
+/* Footer */
+footer {
+  padding: 24px;
+  border-radius: 16px;
+  background-color: var(--block-bg);
+  color: var(--text-light);
+  text-align: center;
+  font-size: 0.95em;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Buttons */
+button {
+  border: none;
+  border-radius: 12px;
+  padding: 0.8em 1.5em;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--accent-color);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Cards / секції */
+.card {
+  padding: 24px;
+  border-radius: 16px;
+  background-color: var(--block-bg);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  margin-bottom: 24px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  main,
+  header,
+  footer {
+    padding: 24px;
+  }
+
+  button {
+    width: 100%;
+    text-align: center;
+  }
+}
